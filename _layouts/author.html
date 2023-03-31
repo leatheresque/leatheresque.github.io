@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  {% include head.html %}  
+  <body class="d-flex flex-column h-100 bg-dark">
+    
+  {% include header.html %}
+
+  <!-- Begin page content -->
+  <main class="container text-warning" style="padding-top: 66px;">
+    <h1 class="display-2"><span class="text-danger">#</span> {{page.author}}</h1>
+    <hr>
+    
+    <div class="row p-3">
+      
+      <div class="col-lg-3 bg-warning text-bg-warning p-3">
+        
+        <h3 class="bg-secondary text-bg-secondary fw-bold p-3 mt-3">Author:</h3>
+        <img class="img-fluid rounded border border-warning" src="{{site.baseurl}}{{page.image}}" >
+        <p class="text-center fw-bold">
+          <a class="text-decoration-none text-dark"><i class="bi bi-github"></i> Leatheresque</a>
+        </p>
+        <p class="p-3" style="text-align: justify;">{{ page.bio }}</p>
+      </div>
+
+      <div class="col-lg-6 text-bg-secondary bg-secondary p-3">
+        
+        <h3 class="bg-warning text-bg-warning fw-bold p-3 mt-3">Contact:</h3>
+        <p class="p-3">
+          <a class="fw-bold text-decoration-none text-white"><i class="bi bi-linkedin"></i> jekyllcoder</a><br/>
+          <a class="fw-bold text-decoration-none text-white"><i class="bi bi-discord"></i> leatheresque#3820</a><br/>
+          <a class="fw-bold text-decoration-none text-white"><i class="bi bi-envelope-at-fill"></i> jekyllcoder@gmail</a>
+        </p>
+      </div>
+
+      <div class="col-lg-3 bg-warning text-bg-warning p-3">
+        <h3 class="bg-secondary text-bg-secondary fw-bold p-3 mt-3">Posts:</h3>
+        {% for post in site.posts %}
+        <a href="{{site.baseurl}}{{post.url}}" class="list-group-item list-group-item-action" aria-current="true">
+          <div class="border border-secondary align-items-center justify-content-between p-3">
+            <h4 class="fw-bold mb-1">{{post.title}}</h4>
+            <sup>{{ post.date | date: "%B %d, %Y" }}</sup>
+          </div>
+        </a>
+        {% endfor %}
+        
+      </div>
+
+    </div>
+    
+  </main>
+
+  {% include footer.html %}
+
+  <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,88 @@
+# Uncomment the next two lines if you are hosting this on
+# gh-pages and use your username/reponame 
+#
+repository : leatheresque/leatheresque.github.io
+github     : [metadata]
+#
+# If you need any help feel free to reach out on discord or 
+# email me and I will help in any way you need. If you want 
+# a custom theme or plugin built you can hop on discord and 
+# we can discuss it.
+# ==========================================================
+#
+# TITLE
+#
+# This is the title of your site.
+
+title: Leatheresque Jekyll Blog
+
+description: >- # this means to ignore newlines until "baseurl:"
+  This site functions like a resume for a backend developer. It is meant to be simplistic in design. 
+
+# BASEURL
+#
+# This is the subpath of your site, e.g. /blog if you want 
+# users to access your site at https://example.com/blog if 
+# you are using a gh-pages site this will be empty if your 
+# site is on https://username.github.io if your repo using 
+# this theme is named "foobar" then change this to /foobar 
+# and when you serve it using the pages setting it will be 
+# live at https://username.github.io/foobar 
+# 
+# I have blog posts on my site explaining these processes 
+# in more detail to help you. If you get stuck feel free 
+# to reach out.
+
+baseurl: ""
+
+# URL
+#
+# This is the base hostname & protocol for your site, 
+# as you see I use https://yosileyid.github.io because this
+# is a template and served live on my gh-pages site.
+#
+# You should change this to your sitename or there will be 
+# issues in links.
+#
+# Use localhost for local development
+# http://localhost:4000
+
+url: "https://leatheresque.github.io"
+
+# SOCIAL 
+#
+# This section handles your social network links displayed for now
+# in the Social Links section on the front page. I will add more
+# as I recieve user feedback on the theme.
+
+author: Joseph
+
+social:
+  github           : leatheresque
+  email            : jekyllcoder@gmail.com
+
+# EXCERPT_SEPARATOR
+#
+# This is used in your blog posts, you can see an example in any 
+# of the example blog posts included in this theme. It functions
+# to trim your posts when displaying them so it doesnt show the
+# entire post like on the front page. Feel free to change where
+# the excerpt ends.
+
+excerpt_separator: <!--more-->
+
+# Build settings
+#
+# These are build settings needed for when you run "jekyll serve"
+# commands. You can change these, but be careful because they can
+# cause your site to break.
+
+plugins:
+  - jekyll-feed
+
+collections:
+  categories:
+    output: true
+    permalink: /:categories/:title/
+  authors:
+    output: true
