@@ -1,30 +1,38 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="auto">
-  {% include head.html %}  
-  <body class="d-flex flex-column h-100 bg-dark">
+<!DOCTYPE html>
+  <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+  <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+  <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+
+  {% include head.html %}
+
+  <body>
+    <!-- ******HEADER****** --> 
+    {% include header.html %}
     
-  {% include header.html %}
-
-  <!-- Begin page content -->
-  <main class="flex-shrink-0">
-    <div class="container text-bg-dark">
+    <div class="container sections-wrapper">
       <div class="row">
-        <div class="col-sm-12 col-lg-9">
-          <h1 class="display-2 text-lime"><span class="text-warning">#</span> Backend Developer</h1>
-          {{ content }}
-        </div>
-        <div class="col-sm-12 col-lg-3">
-          <h1 class="display-2 text-lime"><span class="fw-bold text-warning">#</span> Posts</h1>
-          {% include sidebar.html %}
-        </div>
-      </div>
-    </div>
-  </main>
-  
-
-  {% include footer.html %}
-
-  <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-
+        <div class="primary col-md-8 col-sm-12 col-xs-12">
+        
+          {% include primary.html %}
+            
+        </div><!--//primary-->
+      
+        <div class="secondary col-md-4 col-sm-12 col-xs-12">
+        
+          {% include secondary.html %}
+              
+        </div><!--//secondary-->    
+      </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+      <div class="container text-center">
+        {% include footer.html %}
+      </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    {% include scripts.html %}        
   </body>
 </html>

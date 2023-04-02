@@ -1,28 +1,16 @@
-<header>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-lime fw-bold" href="/">@Leatheresque</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link text-lime" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-lime" href="/blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-lime disabled">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input style="background-color: limegreen; border-color: limegreen;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
+<header class="header">
+  <div class="container">                       
+      <img class="profile-image img-responsive pull-left" src="{{ 'assets/images/leatheresque.png' | absolute_url }}" alt="Joseph Parkton"/>
+      <div class="profile-content pull-left">
+          <h1 class="name">Joseph Parkton</h1>
+          <h2 class="desc">Backend Developer</h2>   
+          <ul class="social list-inline">
+              <li><a href="https://dev.to/leatheresque" target="_blank"><i class="fa-brands fa-dev"></i></a></li>
+              <li><a href="https://linkedin.com/in/jekyllcoder" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/leatheresque" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+              <li class="last-item"><a href="https://github.com/sponsors/leatheresque" target="_blank"><i class="fa-regular fa-heart"></i></a></li>
+          </ul> 
+      </div><!--//profile-->
+      <a class="btn btn-cta-primary pull-right" href="https://discord.gg/8uc5FyPdHk" target="_blank"><i class="fa-brands fa-discord"></i> Join JekyllCord</a>              
+  </div><!--//container-->
+</header><!--//header-->

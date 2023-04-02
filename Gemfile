@@ -11,8 +11,8 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.2"
 
-# This is the default theme for new Jekyll Dress Shop 
-# site. You may change this to anything you like.
+# This is the default theme for new Jekyll Base Setup
+# You may change this to anything you like.
 
 #gem "jekyll-*"
 
@@ -25,6 +25,8 @@ gem "jekyll", "~> 4.3.2"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem 'httparty'
+  gem 'dev_to', path: '_plugins/lib/dev_to'
 end
 
 # Windows and JRuby does not include zoneinfo files, 

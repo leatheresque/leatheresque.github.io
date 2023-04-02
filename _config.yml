@@ -47,7 +47,7 @@ baseurl: ""
 # Use localhost for local development
 # http://localhost:4000
 
-url: "https://leatheresque.github.io"
+url: "http://localhost:4000" # "https://leatheresque.github.io"
 
 # SOCIAL 
 #
@@ -55,11 +55,12 @@ url: "https://leatheresque.github.io"
 # in the Social Links section on the front page. I will add more
 # as I recieve user feedback on the theme.
 
-author: Joseph
+author: Joseph Parkton
 
 social:
   github           : leatheresque
   email            : jekyllcoder@gmail.com
+  discord          : leatheresque#3820
 
 # EXCERPT_SEPARATOR
 #

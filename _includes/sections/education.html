@@ -1,0 +1,8 @@
+<div class="content">
+  {% for ed in site.data.education %}
+  <div class="item">                      
+    <h3 class="title"><i class="fa fa-graduation-cap"></i> {{ ed.course }}</h3>
+    <h4 class="university">{{ ed.school }} <span class="year">({{ ed.completion }})</span></h4>
+  </div><!--//item-->
+  {% endfor %}
+</div><!--//content-->

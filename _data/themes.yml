@@ -1,0 +1,19 @@
+- title: -bs5
+  description: This is the jekyll implimentation of the bootstrap v5.3 starter template
+  link: https://github.com/jekyll-bootstrap/jekyll-bs5
+  image: assets/images/projects/bs5.png
+
+- title: -resume
+  description: Simple bootstrap and font awesome theme for a nice resume in jekyll.
+  link: https://github.com/jekyll-bootstrap/jekyll-resume
+  image: assets/images/projects/resume.png
+
+- title: -dark-docs
+  description: Dark themed documentation template for jekyll users
+  link: https://github.com/jekyll-bootstrap/jekyll-dark-docs
+  image: assets/images/projects/dark-docs.png
+
+- title: -portfolio
+  description: This is a single page portfolio website build in Jekyll
+  link: https://github.com/jekyll-bootstrap/jekyll-portfolio
+  image: assets/images/projects/portfolio.png

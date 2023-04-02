@@ -1,0 +1,13 @@
+<div class="content">
+  {% for plugin in site.data.plugins %}
+
+  <div class="item">
+    <h3 class="title"><a href="#">{{ plugin.title }}</a> <span class="label label-theme">Open Source</span></h3>
+    <p class="summary">{{ plugin.description }}</p>
+    <p><a class="more-link" href="{{ plugin.link }}" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+  </div><!--//item-->
+  
+  {% endfor %}
+  <a class="btn btn-cta-secondary" href="https://github.com/leatheresque" style="width: 100%;">More on Github <i class="fa fa-chevron-right"></i></a>
+                
+</div><!--//content-->

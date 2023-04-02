@@ -1,0 +1,23 @@
+- title: doodle
+  description: This plugin allows you to insert a runnable Python3 IDE in Jekyll pages
+  link: https://github.com/leatheresque/doodle
+
+- title: contents
+  description: This will create a table of contents on the page based on the heading tags.
+  link: https://github.com/leatheresque/contents
+
+- title: dev_to
+  description: This plugin will pull in your articles written on Dev.to and display them in jekyll.
+  link: https://github.com/leatheresque/dev_to
+  
+#- title: bootstrapper
+#  description: This will allow you to use Bootstrap v5.3 classes on pages by including a liquid tag.
+#  link: https://github.com/leatheresque/bootstrapper
+
+#- title: social-share
+#  description: Share your posts across various social media sites. Visitors can also share to their own socials
+#  link: https://github.com/leatheresque/social-share
+
+#- title: image-tweak
+#  description: This automatically adjusts images for better display on your site
+#  link: https://github.com/leatheresque/image-tweak

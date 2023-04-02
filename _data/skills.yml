@@ -1,0 +1,24 @@
+- language: Javascript & jQuery
+  level: Expert
+  percent: 95%
+  color: 03C988
+
+- language: Node.js
+  level: Expert
+  percent: 95%
+  color: 03C988
+
+- language: Ruby
+  level: Intermediate
+  percent: 56%
+  color: 0043a1
+
+- language: Jekyll
+  level: Pro
+  percent: 72%
+  color: 30b5ee
+
+- language: Python
+  level: Newbie
+  percent: 35%
+  color: 13005A

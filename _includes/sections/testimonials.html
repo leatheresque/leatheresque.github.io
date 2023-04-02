@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="item">
+    {% for testimony in site.data.testimonials %}
+    <blockquote class="quote">                                  
+      <p><i class="fa fa-quote-left"></i>{{testimony.comment}}</p>
+    </blockquote>                
+    <p class="source">
+      <span class="name">{{ testimony.source }}</span><br />
+      <span class="title">{{ testimony.company }}</span>
+    </p>
+    <hr/>
+    {% endfor %}
+  </div><!--//item-->
+              
+  <p><a class="more-link" href="https://linkedin.com/in/jekyllcoder" target="_blank"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
+              
+</div><!--//content-->

@@ -1,0 +1,16 @@
+<div class="content">
+  <p class="intro">You can also view a breakdown of these and the time spent coding over on my dashboard on Wakatime. If you do not know about Wakatime, it is a IDE plugin that boosts productivity.</p>
+                            
+  <div class="skillset">
+    {% for skill in site.data.skills %}
+    <div class="item">
+      <h3 class="level-title">{{ skill.language }}<span class="level-label">{{ skill.level }}</span></h3>
+      <div class="level-bar">
+        <div class="level-bar-inner" style="background: #{{skill.color}}" data-level="{{skill.percent}}"></div>                                      
+      </div><!--//level-bar-->                       
+    </div><!--//item-->
+    {% endfor %}
+
+    <p><a class="more-link" href="https://wakatime.com/@3c11c059-94fd-4d45-90cc-72d4826700a8" target="_blank"><i class="fa fa-external-link"></i> More on Wakatime</a></p> 
+  </div>              
+</div><!--//content-->  

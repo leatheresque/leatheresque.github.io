@@ -1,3 +1,10 @@
+PATH
+  remote: _plugins/lib/dev_to
+  specs:
+    dev_to (0.0.1)
+      httparty
+      jekyll
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -13,6 +20,9 @@ GEM
     forwardable-extended (2.6.0)
     google-protobuf (3.22.0-x86_64-linux)
     http_parser.rb (0.8.0)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jekyll (4.3.2)
@@ -46,6 +56,8 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_mime (1.1.2)
+    multi_xml (0.6.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.1)
@@ -68,7 +80,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  dev_to!
   http_parser.rb (~> 0.6.0)
+  httparty
   jekyll (~> 4.3.2)
   jekyll-feed (~> 0.12)
   tzinfo (>= 1, < 3)

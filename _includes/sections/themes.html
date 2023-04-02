@@ -1,0 +1,47 @@
+<div class="content">    
+  <!-- This is the FEATURE project... -->                                               
+  <div class="item featured text-center">
+    <h3 class="title">
+      <a href="https://github.com/jekyll-bootstrap/jekyll-newspaper" target="_blank">
+        Jekyll Newspaper
+      </a>
+    </h3>
+    <p class="summary">A responsive Bootstrap template designed for jekyll blogs with a "newspaper" feel.</p>
+      <div class="featured-image">
+        <a href="https://github.com/jekyll-bootstrap/jekyll-newspaper" target="_blank">
+          <img class="img-responsive project-image" src="assets/images/projects/newspaper.png" alt="Jekyll Newspaper" />
+        </a>
+        <div class="ribbon">
+          <div class="text">New</div>
+        </div>
+      </div>
+                      
+      <div class="desc text-left">                                    
+        <p>I am currently working on this "newspaper" theme for jekyll along with a "portfolio" theme. I work as a carpenter by day and code at night. If you would like to contribute to my work in some way, you can sponsor me on github sponsors. I appreciate anything you can do.</p>
+      </div><!--//desc-->         
+    <a class="btn btn-cta-secondary" href="https://github.com/sponsors/leatheresque" target="_blank"><i class="fa-regular fa-thumbs-up"></i> Sponsor My Work
+    </a>                 
+  </div><!--//item-->
+  
+  <hr class="divider" />
+
+  {% for project in site.data.themes %}
+  
+  <div class="item row">
+    <a class="col-md-4 col-sm-4 col-xs-12" href="{{ project.link }}" target="_blank">
+      <img class="img-responsive project-image" src="{{ project.image }}" alt="{{ project.title }}" />
+    </a>
+    <div class="desc col-md-8 col-sm-8 col-xs-12">
+      <h3 class="title">
+        <a href="{{ project.link }}" target="_blank">
+          {{ project.title }}
+        </a>
+      </h3>
+      <p>{{ project.description }}</p>
+      <p><a class="more-link" href="{{ project.link }}" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+    </div><!--//desc-->                          
+  </div><!--//item-->
+
+  {% endfor %}
+
+</div><!--//content-->
