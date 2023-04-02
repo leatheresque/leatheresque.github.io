@@ -25,8 +25,6 @@ gem "jekyll", "~> 4.3.2"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem 'httparty'
-  gem 'dev_to', path: '_plugins/lib/dev_to'
 end
 
 # Windows and JRuby does not include zoneinfo files, 
